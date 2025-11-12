@@ -92,15 +92,21 @@ body{
     background-color: #ffffff;
 }
 .bill{
-    width: 25%;
-    height: 50%;
+    width: 75%;
+    height: 95%;
 }
 
+.steve{
+width: 18%;
+height: 35%;
+}
 .texto {
     padding-left: 20px; 
+    font-size: 30px;
 }
 .texto_steve {
     padding-right: 20px;
+    font-size: 30px;
 }
 .te {
     font-style: initial;
