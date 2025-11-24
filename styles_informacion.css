@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-color: #ffebfa;
+    position: relative;
+}
+
+.header{
+    background-color: #d39dff;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: #000000;
+    text-decoration: none;    
+}
+
+.header .nav-links li a:hover{
+    color: #ffbc0e;
+}
+
+.header .btn button{
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #ffffff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: #ffffff;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+.titulo {
+    text-align: center;
+}
+.caja {
+    display: flex;
+    padding: 35px;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 6%;
+}
+
+body {
+  background: #ffebfa;
+  font-family: Arial, sans-serif;
+}
+
+.timeline {
+  position: relative;
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px 0;
+}
+
+/* Línea central */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background: #ff90ed;
+  transform: translateX(-50%);
+}
+
+/* Estilo base de los eventos */
+.event {
+  width: 45%;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: relative;
+  margin: 25px 0;
+}
+
+/* Eventos a la izquierda */
+.event.left {
+  left: 0;
+}
+
+/* Eventos a la derecha */
+.event.right {
+  left: 55%;
+}
+
+/* Puntitos de la línea del tiempo */
+.event::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 16px;
+  height: 16px;
+  background: #ff90ed;
+  border-radius: 50%;
+}
+
+/* Punto para izquierda */
+.event.left::before {
+  right: -30px;
+}
+
+/* Punto para derecha */
+.event.right::before {
+  left: -30px;
+}
+
+/* Estilos del texto */
+.event h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #222;
+}
+
+.event p {
+  margin-top: 8px;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* Animación para cuando se pasa el mouse */
+.event {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.20);
+}
